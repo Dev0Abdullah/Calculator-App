@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Calculator app</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="calc">
+      <div class="head">
+        <h3>Calc</h3>
+      </div>
+      <div class="theme">
+        <div class="curs">
+          <div class="num">
+            <p>1</p>
+            <p>2</p>
+          </div>
+          <div class="check">
+            <p>Theme</p>
+            <input type="checkbox" id="check">
+            <label for="check" class="button"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input id="display" readonly>
+    <div class="keyes">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="clearOneDisplay()">Del</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('+')">+</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('/')">/</button>
+      <button onclick="appendToDisplay('*')">*</button>
+      <button onclick="clearDisplay()" class="reast">Reast</button>
+      <button onclick="calculatDisplay()" class="equl">=</button>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
